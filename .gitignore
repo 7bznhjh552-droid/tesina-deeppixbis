@@ -1,0 +1,21 @@
+# Entornos y dependencias
+__pycache__/
+*.pyc
+.env
+.venv
+*.egg-info/
+*.log
+
+# Archivos temporales
+logs/
+tmp/
+.DS_Store
+
+# Datos y modelos pesados
+data/raw_*/
+data/processed/
+models/
+plots/
+
+# Virtualenv pyenv
+.python-version
