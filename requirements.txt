@@ -1,0 +1,12 @@
+numpy
+pandas
+tqdm
+opencv-python
+Pillow
+scikit-learn
+matplotlib
+torch           # intento por pip; puede fallar en M2 -> ver nota abajo
+torchvision
+facenet-pytorch  # MTCNN para recorte fácil de caras
+albumentations
+tensorboard
