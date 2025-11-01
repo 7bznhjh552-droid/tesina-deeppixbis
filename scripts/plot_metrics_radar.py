@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Métricas (transformadas para que todas sean "mejor = más alto")
+# Métricas transformadas para que todas sean "mejor = más alto"
 labels = np.array(['Accuracy','TDR','1-FPR','1-FNR','AUC'])
 deeppixbis = np.array([0.85, 0.72, 1-0.08, 1-0.28, 0.88])
 deeppixbis_adv = np.array([0.84, 0.8399, 1-0.04, 1-0.15, 0.93])
@@ -20,7 +20,6 @@ ax.fill(angles, deeppixbis_adv, alpha=0.25, color='#4daf4a')
 
 ax.set_thetagrids(np.degrees(angles[:-1]), labels)
 ax.set_ylim(0,1)
-ax.set_title("Figura 5.2 – Mejora relativa por entrenamiento adversarial", y=1.1)
 ax.legend(loc='upper right', bbox_to_anchor=(1.3,1.1))
 plt.tight_layout()
 plt.savefig('plots/metrics_radar.png', dpi=200)

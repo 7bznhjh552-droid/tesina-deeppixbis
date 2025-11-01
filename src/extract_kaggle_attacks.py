@@ -14,7 +14,7 @@ for fname in os.listdir(SRC):
     pathlib.Path(out_dir).mkdir(parents=True, exist_ok=True)
     # extraer 1 frame por segundo (ajustable)
     cmd = [
-        "ffmpeg", "-i", video_path, "-vf", "fps=1,scale=224:224",
+        "ffmpeg", "-i", video_path, "-vf", "fps=3,scale=224:224",
         os.path.join(out_dir, "frame_%05d.jpg")
     ]
     print("Extracting:", video_path)
